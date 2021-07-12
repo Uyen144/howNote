@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="howNote.MainPage"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    BackgroundColor="#b6c9f0">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <x:Int32 x:Key="cornerRadius">20</x:Int32>
+            <Color x:Key="buttonBackgroundColor">white</Color>
+            <Style x:Key="button" TargetType="Button">
+                <Setter Property="BackgroundColor" Value="White" />
+                <Setter Property="TextColor" Value="Gray" />
+                <Setter Property="CornerRadius" Value="20" />
+                <Setter Property="HorizontalOptions" Value="Center" />
+                <Setter Property="WidthRequest" Value="200" />
+            </Style>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    <StackLayout Spacing="20" VerticalOptions="Center">
+
+        <Label
+            FontFamily="Indie-Flower"
+            FontSize="70"
+            HeightRequest="100"
+            HorizontalOptions="Center"
+            Text="how Note"
+            TextColor="White" />
+        <Image
+            HeightRequest="150"
+            HorizontalOptions="Center"
+            Source="note.png"
+            WidthRequest="190" />
+        <Entry
+            HorizontalOptions="Center"
+            IsPassword="True"
+            Keyboard="Numeric"
+            MaxLength="4"
+            Placeholder="Password"
+            WidthRequest="200" />
+        <!--  true to hide pass  -->
+        <Button
+            Clicked="Handle_Clicked"
+            Style="{StaticResource button}"
+            Text="Login" />
+        <Button Style="{StaticResource button}" Text="Set Password" />
+    </StackLayout>
+
+</ContentPage>

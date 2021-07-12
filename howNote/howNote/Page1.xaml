@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="howNote.Page1"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    BackgroundColor="#b6c9f0">
+    <StackLayout>
+        <SearchBar Placeholder="Search" TextColor="Gray" />
+        <Button
+            BackgroundColor="White"
+            Clicked="Clicked_new"
+            CornerRadius="20"
+            HorizontalOptions="End"
+            Text="New"
+            TextColor="Gray"
+            VerticalOptions="End"
+            WidthRequest="80" />
+        <Button
+            BackgroundColor="White"
+            Clicked="Clicked_back"
+            CornerRadius="20"
+            HorizontalOptions="EndAndExpand"
+            Text="Back"
+            TextColor="Gray"
+            VerticalOptions="EndAndExpand"
+            WidthRequest="80" />
+    </StackLayout>
+</ContentPage>
